@@ -41,7 +41,7 @@ y = heart_data["target"]
 smote = SMOTE(random_state=42)
 X_resampled, y_resampled = smote.fit_resample(X, y)
 
-st.subheader("Class Distribution After SMOTE")
+st.subheader("Target Variable Distribution After SMOTE")
 fig, ax = plt.subplots()
 sns.countplot(x=y_resampled, ax=ax)
 st.pyplot(fig)
