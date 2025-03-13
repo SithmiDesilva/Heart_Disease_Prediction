@@ -95,6 +95,13 @@ with open(model_filename, "wb") as file:
     pickle.dump(model, file)
 
 st.write(f"🎯 Model saved as {model_filename}")
+st.write('------------------------------------------------------------------------------------------------------------')
+st.subheader('GUIDE')
+st.write('👈 Please select the model from the sidebar to make predictions.')
+st.write('👈 Enter the details in the sidebar.')
+st.write('👈 Click on the "Predict" button to see the prediction.')
+st.write('👈 The prediction will be displayed in the sidebar.')
+st.write('👈 The model has been trained on the Heart Disease UCI dataset.')
 
 # User Input for Prediction
 
@@ -102,7 +109,7 @@ st.sidebar.header("  💖  SmartCardia")
 
 def user_input():
     age = st.sidebar.number_input("Age", 20, 100, 50, help="Age of the person in years.")
-    sex = st.sidebar.radio("Sex", [0, 1], help="0: Female, 1: Male")
+    sex = st.sidebar.radio("Sex", [0,1], help="0: Female, 1: Male")
     cp = st.sidebar.selectbox("Chest Pain Type (0-3)", [0, 1, 2, 3], help="0: Typical angina, 1: Atypical angina, 2: Non-anginal pain, 3: Asymptomatic")
     trestbps = st.sidebar.number_input("Resting Blood Pressure", 80, 200, 120, help="Resting blood pressure (in mm Hg).")
     chol = st.sidebar.number_input("Serum Cholesterol", 100, 500, 200, help="Serum cholesterol level in mg/dL.")
