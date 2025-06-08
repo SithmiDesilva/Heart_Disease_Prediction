@@ -130,13 +130,6 @@ We hope this project helps demonstrate how machine learning can support smarter 
 
 ---
 
-## 📬 Contact
-
-If you have questions, suggestions, or want to collaborate:  
-📧 Email: suveendradesilva@gmail.com
-
----
-
 > 💡 *Empowering healthcare through data-driven insights.*
 
 
